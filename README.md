@@ -31,7 +31,7 @@ More or less every hour, when HealthKit detects change in steps count, Health2Fi
 
 The MIT License (MIT)
 
-Copyright (c) 2015 Michał Mizera
+Copyright (c) 2015 Polidea
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
