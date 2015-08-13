@@ -1,0 +1,718 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0E01A6F61B4C19BF004549EB /* Health2Fitbit.xcdatamodel in Sources */ = {isa = PBXBuildFile; fileRef = 7A1875E52A37AD700C3584AC /* Health2Fitbit.xcdatamodel */; };
+		0E441D4B1B454D66003F3418 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E441D4A1B454D66003F3418 /* main.m */; };
+		0E441D4E1B454D66003F3418 /* H2FAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E441D4D1B454D66003F3418 /* H2FAppDelegate.m */; };
+		0E441D511B454D66003F3418 /* H2FMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E441D501B454D66003F3418 /* H2FMainViewController.m */; };
+		0E441D541B454D66003F3418 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E441D521B454D66003F3418 /* Main.storyboard */; };
+		0E441D561B454D66003F3418 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0E441D551B454D66003F3418 /* Images.xcassets */; };
+		0E441D591B454D66003F3418 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0E441D571B454D66003F3418 /* LaunchScreen.xib */; };
+		0E441D651B454D66003F3418 /* Health2FitbitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E441D641B454D66003F3418 /* Health2FitbitTests.m */; };
+		0E5BC9D21B4C20CC0026919F /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E5BC9D11B4C20CC0026919F /* CoreData.framework */; };
+		0E5BC9DB1B4F24C70026919F /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E5BC9DA1B4F24C70026919F /* StoreKit.framework */; };
+		0E65C6891B4572C80023250A /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E65C6881B4572C80023250A /* HealthKit.framework */; };
+		0E8AFEBD1B4A4F1C00D4C5B2 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E8AFEBC1B4A4F1C00D4C5B2 /* AudioToolbox.framework */; };
+		0E8AFEBF1B4A4F2300D4C5B2 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E8AFEBE1B4A4F2300D4C5B2 /* CFNetwork.framework */; };
+		0E8AFEC11B4A4F2A00D4C5B2 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E8AFEC01B4A4F2A00D4C5B2 /* CoreGraphics.framework */; };
+		0E8AFEC31B4A4F3200D4C5B2 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E8AFEC21B4A4F3200D4C5B2 /* CoreLocation.framework */; };
+		0E8AFEC51B4A4F3C00D4C5B2 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E8AFEC41B4A4F3C00D4C5B2 /* MobileCoreServices.framework */; };
+		0E8AFEC71B4A4F4400D4C5B2 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E8AFEC61B4A4F4400D4C5B2 /* QuartzCore.framework */; };
+		0E8AFEC91B4A4F4B00D4C5B2 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E8AFEC81B4A4F4B00D4C5B2 /* Security.framework */; };
+		0E8AFECB1B4A4F5400D4C5B2 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E8AFECA1B4A4F5400D4C5B2 /* SystemConfiguration.framework */; };
+		0E8AFECD1B4A4F5E00D4C5B2 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E8AFECC1B4A4F5E00D4C5B2 /* libz.dylib */; };
+		0E8AFECF1B4A4F6900D4C5B2 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E8AFECE1B4A4F6900D4C5B2 /* libsqlite3.dylib */; };
+		0E8AFED11B4A4F7700D4C5B2 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E8AFED01B4A4F7700D4C5B2 /* Accounts.framework */; };
+		0E8AFED31B4A4F7E00D4C5B2 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E8AFED21B4A4F7E00D4C5B2 /* Social.framework */; };
+		7A1870600DFCF8C04B667ADD /* BFTask+H2FFailureChecking.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A187062DE0685E32F2ED441 /* BFTask+H2FFailureChecking.m */; };
+		7A1870899F12194BF4193A49 /* H2FLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A1879BAA9B2B9C592750C79 /* H2FLogger.m */; };
+		7A18728AEAF46D279B40024D /* NSOperation+Failurable.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A18777C140AE5E0C529A0A4 /* NSOperation+Failurable.m */; };
+		7A1872A66BD14B75A79BDB84 /* CoreDataStack.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A1876125C668577AA947DAC /* CoreDataStack.m */; };
+		7A18761F9A2F6E5DDBE89D2B /* StepsLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A187F7AA5FF3BA5D93989FF /* StepsLog.m */; };
+		7A18792C1645130F49D30501 /* NSManagedObjectContext+Helpers.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A187232884236B4163F4D71 /* NSManagedObjectContext+Helpers.m */; };
+		7A1879D85186E5BA14FB1AD5 /* ManagedObjectContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A187E07732081CB530760EE /* ManagedObjectContext.m */; };
+		7A187AA52363A4CB9660C50E /* NSObject+H2FClassName.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A187C2746E301ADDADC7359 /* NSObject+H2FClassName.m */; };
+		7A187BCDCCB98BB6AD455A53 /* H2FHealthManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A187A9CD1C869BAD0429022 /* H2FHealthManager.m */; };
+		7A187C7E9EC7535F7FAB30E9 /* NSException+DefaultExceptions.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A1871C87AEE2FE64C03DB5E /* NSException+DefaultExceptions.m */; };
+		7A187DC603E21A831B30AEBD /* AFOAuth1Client+BFTasks.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A1876F06CC0F8899A9BA137 /* AFOAuth1Client+BFTasks.m */; };
+		7A187DF4834DD2650F37A1FD /* HKHealthStore+BFTasks.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A18730F8CD0FB280E5E8CE7 /* HKHealthStore+BFTasks.m */; };
+		7A187F0421722FE47D43B528 /* _StepsLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A187FD58D834BC33561DCD4 /* _StepsLog.m */; };
+		CA5EECB02B78A8F047B812F9 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BD27C97DAD8F7C7C97C396B7 /* libPods.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0E441D5F1B454D66003F3418 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0E441D3D1B454D66003F3418 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0E441D441B454D66003F3418;
+			remoteInfo = Health2Fitbit;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		089D69186F647D89DB5F977D /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		0E1AE7021B4568B3008D702F /* Health2Fitbit.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Health2Fitbit.entitlements; sourceTree = "<group>"; };
+		0E441D451B454D66003F3418 /* Health2Fitbit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Health2Fitbit.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0E441D491B454D66003F3418 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0E441D4A1B454D66003F3418 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0E441D4C1B454D66003F3418 /* H2FAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = H2FAppDelegate.h; sourceTree = "<group>"; };
+		0E441D4D1B454D66003F3418 /* H2FAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = H2FAppDelegate.m; sourceTree = "<group>"; };
+		0E441D4F1B454D66003F3418 /* H2FMainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = H2FMainViewController.h; sourceTree = "<group>"; };
+		0E441D501B454D66003F3418 /* H2FMainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = H2FMainViewController.m; sourceTree = "<group>"; };
+		0E441D531B454D66003F3418 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0E441D551B454D66003F3418 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		0E441D581B454D66003F3418 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		0E441D5E1B454D66003F3418 /* Health2FitbitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Health2FitbitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0E441D631B454D66003F3418 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0E441D641B454D66003F3418 /* Health2FitbitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Health2FitbitTests.m; sourceTree = "<group>"; };
+		0E5BC9D11B4C20CC0026919F /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		0E5BC9DA1B4F24C70026919F /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		0E65C6881B4572C80023250A /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
+		0E8AFEBC1B4A4F1C00D4C5B2 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		0E8AFEBE1B4A4F2300D4C5B2 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		0E8AFEC01B4A4F2A00D4C5B2 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		0E8AFEC21B4A4F3200D4C5B2 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		0E8AFEC41B4A4F3C00D4C5B2 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		0E8AFEC61B4A4F4400D4C5B2 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		0E8AFEC81B4A4F4B00D4C5B2 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		0E8AFECA1B4A4F5400D4C5B2 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		0E8AFECC1B4A4F5E00D4C5B2 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		0E8AFECE1B4A4F6900D4C5B2 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		0E8AFED01B4A4F7700D4C5B2 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
+		0E8AFED21B4A4F7E00D4C5B2 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		7A187062DE0685E32F2ED441 /* BFTask+H2FFailureChecking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "BFTask+H2FFailureChecking.m"; sourceTree = "<group>"; };
+		7A1871B17B8347E2D7853BEA /* HKHealthStore+BFTasks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "HKHealthStore+BFTasks.h"; sourceTree = "<group>"; };
+		7A1871C87AEE2FE64C03DB5E /* NSException+DefaultExceptions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSException+DefaultExceptions.m"; sourceTree = "<group>"; };
+		7A187232884236B4163F4D71 /* NSManagedObjectContext+Helpers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSManagedObjectContext+Helpers.m"; sourceTree = "<group>"; };
+		7A18730F8CD0FB280E5E8CE7 /* HKHealthStore+BFTasks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "HKHealthStore+BFTasks.m"; sourceTree = "<group>"; };
+		7A1875E52A37AD700C3584AC /* Health2Fitbit.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Health2Fitbit.xcdatamodel; sourceTree = "<group>"; };
+		7A1876125C668577AA947DAC /* CoreDataStack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreDataStack.m; sourceTree = "<group>"; };
+		7A187683E6C0F54C8F390366 /* _StepsLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _StepsLog.h; sourceTree = "<group>"; };
+		7A1876A5B426D513F65CFB85 /* BFTask+H2FFailureChecking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "BFTask+H2FFailureChecking.h"; sourceTree = "<group>"; };
+		7A1876F06CC0F8899A9BA137 /* AFOAuth1Client+BFTasks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AFOAuth1Client+BFTasks.m"; sourceTree = "<group>"; };
+		7A18777C140AE5E0C529A0A4 /* NSOperation+Failurable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSOperation+Failurable.m"; sourceTree = "<group>"; };
+		7A187808818850367005AC0E /* H2FLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = H2FLogger.h; sourceTree = "<group>"; };
+		7A1879BAA9B2B9C592750C79 /* H2FLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = H2FLogger.m; sourceTree = "<group>"; };
+		7A187A9CD1C869BAD0429022 /* H2FHealthManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = H2FHealthManager.m; sourceTree = "<group>"; };
+		7A187B16725AA03538770FCD /* H2FHealthManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = H2FHealthManager.h; sourceTree = "<group>"; };
+		7A187B6F3DFF608965809D7F /* H2FMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = H2FMacros.h; sourceTree = "<group>"; };
+		7A187BB1839CEEF2F5CC8A64 /* NSException+DefaultExceptions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSException+DefaultExceptions.h"; sourceTree = "<group>"; };
+		7A187C2746E301ADDADC7359 /* NSObject+H2FClassName.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+H2FClassName.m"; sourceTree = "<group>"; };
+		7A187CB78B493E42330453F2 /* StepsLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StepsLog.h; sourceTree = "<group>"; };
+		7A187D39DE458EE47B4B0274 /* AFOAuth1Client+BFTasks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AFOAuth1Client+BFTasks.h"; sourceTree = "<group>"; };
+		7A187E07732081CB530760EE /* ManagedObjectContext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ManagedObjectContext.m; sourceTree = "<group>"; };
+		7A187E8562F9683951E26991 /* CoreDataStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreDataStack.h; sourceTree = "<group>"; };
+		7A187E8FDBC924979575AF42 /* NSObject+H2FClassName.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+H2FClassName.h"; sourceTree = "<group>"; };
+		7A187EA3F5FA9B07A9B8B5F3 /* ManagedObjectContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ManagedObjectContext.h; sourceTree = "<group>"; };
+		7A187F215222B11491359D4E /* NSOperation+Failurable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSOperation+Failurable.h"; sourceTree = "<group>"; };
+		7A187F48BC4FBD510C73BC37 /* NSManagedObjectContext+Helpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSManagedObjectContext+Helpers.h"; sourceTree = "<group>"; };
+		7A187F7AA5FF3BA5D93989FF /* StepsLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StepsLog.m; sourceTree = "<group>"; };
+		7A187FD58D834BC33561DCD4 /* _StepsLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _StepsLog.m; sourceTree = "<group>"; };
+		A889FB0B8A42395C9D0A18C2 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		BD27C97DAD8F7C7C97C396B7 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0E441D421B454D66003F3418 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0E5BC9DB1B4F24C70026919F /* StoreKit.framework in Frameworks */,
+				0E5BC9D21B4C20CC0026919F /* CoreData.framework in Frameworks */,
+				0E8AFED31B4A4F7E00D4C5B2 /* Social.framework in Frameworks */,
+				0E8AFED11B4A4F7700D4C5B2 /* Accounts.framework in Frameworks */,
+				0E8AFECF1B4A4F6900D4C5B2 /* libsqlite3.dylib in Frameworks */,
+				0E8AFECD1B4A4F5E00D4C5B2 /* libz.dylib in Frameworks */,
+				0E8AFECB1B4A4F5400D4C5B2 /* SystemConfiguration.framework in Frameworks */,
+				0E8AFEC91B4A4F4B00D4C5B2 /* Security.framework in Frameworks */,
+				0E8AFEC71B4A4F4400D4C5B2 /* QuartzCore.framework in Frameworks */,
+				0E8AFEC51B4A4F3C00D4C5B2 /* MobileCoreServices.framework in Frameworks */,
+				0E8AFEC31B4A4F3200D4C5B2 /* CoreLocation.framework in Frameworks */,
+				0E8AFEC11B4A4F2A00D4C5B2 /* CoreGraphics.framework in Frameworks */,
+				0E8AFEBF1B4A4F2300D4C5B2 /* CFNetwork.framework in Frameworks */,
+				0E8AFEBD1B4A4F1C00D4C5B2 /* AudioToolbox.framework in Frameworks */,
+				CA5EECB02B78A8F047B812F9 /* libPods.a in Frameworks */,
+				0E65C6891B4572C80023250A /* HealthKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0E441D5B1B454D66003F3418 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0E01A6F51B4C12CA004549EB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7A1875E52A37AD700C3584AC /* Health2Fitbit.xcdatamodel */,
+				7A1873A1567784B57EC629A7 /* Entities */,
+				7A187FB728D68F49F7FC0186 /* Stack */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		0E441D3C1B454D66003F3418 = {
+			isa = PBXGroup;
+			children = (
+				0E441D471B454D66003F3418 /* Health2Fitbit */,
+				0E441D611B454D66003F3418 /* Health2FitbitTests */,
+				0E441D461B454D66003F3418 /* Products */,
+				5BDE346BCF2B1849A6238DC5 /* Pods */,
+				6476E8D8258402405B68DA91 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		0E441D461B454D66003F3418 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0E441D451B454D66003F3418 /* Health2Fitbit.app */,
+				0E441D5E1B454D66003F3418 /* Health2FitbitTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0E441D471B454D66003F3418 /* Health2Fitbit */ = {
+			isa = PBXGroup;
+			children = (
+				0E01A6F51B4C12CA004549EB /* Model */,
+				0E1AE7021B4568B3008D702F /* Health2Fitbit.entitlements */,
+				0E441D4C1B454D66003F3418 /* H2FAppDelegate.h */,
+				0E441D4D1B454D66003F3418 /* H2FAppDelegate.m */,
+				0E441D4F1B454D66003F3418 /* H2FMainViewController.h */,
+				0E441D501B454D66003F3418 /* H2FMainViewController.m */,
+				0E441D521B454D66003F3418 /* Main.storyboard */,
+				0E441D551B454D66003F3418 /* Images.xcassets */,
+				0E441D571B454D66003F3418 /* LaunchScreen.xib */,
+				0E441D481B454D66003F3418 /* Supporting Files */,
+				7A187A9CD1C869BAD0429022 /* H2FHealthManager.m */,
+				7A187B16725AA03538770FCD /* H2FHealthManager.h */,
+				7A1879BAA9B2B9C592750C79 /* H2FLogger.m */,
+				7A187808818850367005AC0E /* H2FLogger.h */,
+				7A187F47543A26FA2C1FFE31 /* Utils */,
+			);
+			path = Health2Fitbit;
+			sourceTree = "<group>";
+		};
+		0E441D481B454D66003F3418 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0E441D491B454D66003F3418 /* Info.plist */,
+				0E441D4A1B454D66003F3418 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0E441D611B454D66003F3418 /* Health2FitbitTests */ = {
+			isa = PBXGroup;
+			children = (
+				0E441D641B454D66003F3418 /* Health2FitbitTests.m */,
+				0E441D621B454D66003F3418 /* Supporting Files */,
+			);
+			path = Health2FitbitTests;
+			sourceTree = "<group>";
+		};
+		0E441D621B454D66003F3418 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0E441D631B454D66003F3418 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5BDE346BCF2B1849A6238DC5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A889FB0B8A42395C9D0A18C2 /* Pods.debug.xcconfig */,
+				089D69186F647D89DB5F977D /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		6476E8D8258402405B68DA91 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0E5BC9DA1B4F24C70026919F /* StoreKit.framework */,
+				0E5BC9D11B4C20CC0026919F /* CoreData.framework */,
+				0E8AFED21B4A4F7E00D4C5B2 /* Social.framework */,
+				0E8AFED01B4A4F7700D4C5B2 /* Accounts.framework */,
+				0E8AFECE1B4A4F6900D4C5B2 /* libsqlite3.dylib */,
+				0E8AFECC1B4A4F5E00D4C5B2 /* libz.dylib */,
+				0E8AFECA1B4A4F5400D4C5B2 /* SystemConfiguration.framework */,
+				0E8AFEC81B4A4F4B00D4C5B2 /* Security.framework */,
+				0E8AFEC61B4A4F4400D4C5B2 /* QuartzCore.framework */,
+				0E8AFEC41B4A4F3C00D4C5B2 /* MobileCoreServices.framework */,
+				0E8AFEC21B4A4F3200D4C5B2 /* CoreLocation.framework */,
+				0E8AFEC01B4A4F2A00D4C5B2 /* CoreGraphics.framework */,
+				0E8AFEBE1B4A4F2300D4C5B2 /* CFNetwork.framework */,
+				0E8AFEBC1B4A4F1C00D4C5B2 /* AudioToolbox.framework */,
+				0E65C6881B4572C80023250A /* HealthKit.framework */,
+				BD27C97DAD8F7C7C97C396B7 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7A1873A1567784B57EC629A7 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				7A18782DA9E7B79D68438A48 /* MachineGenerated */,
+				7A187CB78B493E42330453F2 /* StepsLog.h */,
+				7A187F7AA5FF3BA5D93989FF /* StepsLog.m */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		7A18782DA9E7B79D68438A48 /* MachineGenerated */ = {
+			isa = PBXGroup;
+			children = (
+				7A187683E6C0F54C8F390366 /* _StepsLog.h */,
+				7A187FD58D834BC33561DCD4 /* _StepsLog.m */,
+			);
+			path = MachineGenerated;
+			sourceTree = "<group>";
+		};
+		7A187F47543A26FA2C1FFE31 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				7A1871C87AEE2FE64C03DB5E /* NSException+DefaultExceptions.m */,
+				7A187BB1839CEEF2F5CC8A64 /* NSException+DefaultExceptions.h */,
+				7A187B6F3DFF608965809D7F /* H2FMacros.h */,
+				7A187E8FDBC924979575AF42 /* NSObject+H2FClassName.h */,
+				7A187C2746E301ADDADC7359 /* NSObject+H2FClassName.m */,
+				7A187F48BC4FBD510C73BC37 /* NSManagedObjectContext+Helpers.h */,
+				7A187232884236B4163F4D71 /* NSManagedObjectContext+Helpers.m */,
+				7A18777C140AE5E0C529A0A4 /* NSOperation+Failurable.m */,
+				7A187F215222B11491359D4E /* NSOperation+Failurable.h */,
+				7A1876F06CC0F8899A9BA137 /* AFOAuth1Client+BFTasks.m */,
+				7A187D39DE458EE47B4B0274 /* AFOAuth1Client+BFTasks.h */,
+				7A1876A5B426D513F65CFB85 /* BFTask+H2FFailureChecking.h */,
+				7A187062DE0685E32F2ED441 /* BFTask+H2FFailureChecking.m */,
+				7A18730F8CD0FB280E5E8CE7 /* HKHealthStore+BFTasks.m */,
+				7A1871B17B8347E2D7853BEA /* HKHealthStore+BFTasks.h */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		7A187FB728D68F49F7FC0186 /* Stack */ = {
+			isa = PBXGroup;
+			children = (
+				7A187E8562F9683951E26991 /* CoreDataStack.h */,
+				7A1876125C668577AA947DAC /* CoreDataStack.m */,
+				7A187EA3F5FA9B07A9B8B5F3 /* ManagedObjectContext.h */,
+				7A187E07732081CB530760EE /* ManagedObjectContext.m */,
+			);
+			path = Stack;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0E441D441B454D66003F3418 /* Health2Fitbit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0E441D681B454D66003F3418 /* Build configuration list for PBXNativeTarget "Health2Fitbit" */;
+			buildPhases = (
+				2000F4A02AAEEBA744634F9F /* Check Pods Manifest.lock */,
+				0E441D411B454D66003F3418 /* Sources */,
+				0E441D421B454D66003F3418 /* Frameworks */,
+				0E441D431B454D66003F3418 /* Resources */,
+				8BF7581F172F9D40A183ABE6 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Health2Fitbit;
+			productName = Health2Fitbit;
+			productReference = 0E441D451B454D66003F3418 /* Health2Fitbit.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0E441D5D1B454D66003F3418 /* Health2FitbitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0E441D6B1B454D66003F3418 /* Build configuration list for PBXNativeTarget "Health2FitbitTests" */;
+			buildPhases = (
+				0E441D5A1B454D66003F3418 /* Sources */,
+				0E441D5B1B454D66003F3418 /* Frameworks */,
+				0E441D5C1B454D66003F3418 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0E441D601B454D66003F3418 /* PBXTargetDependency */,
+			);
+			name = Health2FitbitTests;
+			productName = Health2FitbitTests;
+			productReference = 0E441D5E1B454D66003F3418 /* Health2FitbitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0E441D3D1B454D66003F3418 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = MichalMizera;
+				TargetAttributes = {
+					0E441D441B454D66003F3418 = {
+						CreatedOnToolsVersion = 6.3.2;
+						DevelopmentTeam = WR35VQMY5K;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.HealthKit = {
+								enabled = 1;
+							};
+						};
+					};
+					0E441D5D1B454D66003F3418 = {
+						CreatedOnToolsVersion = 6.3.2;
+						TestTargetID = 0E441D441B454D66003F3418;
+					};
+				};
+			};
+			buildConfigurationList = 0E441D401B454D66003F3418 /* Build configuration list for PBXProject "Health2Fitbit" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0E441D3C1B454D66003F3418;
+			productRefGroup = 0E441D461B454D66003F3418 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0E441D441B454D66003F3418 /* Health2Fitbit */,
+				0E441D5D1B454D66003F3418 /* Health2FitbitTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0E441D431B454D66003F3418 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0E441D541B454D66003F3418 /* Main.storyboard in Resources */,
+				0E441D591B454D66003F3418 /* LaunchScreen.xib in Resources */,
+				0E441D561B454D66003F3418 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0E441D5C1B454D66003F3418 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2000F4A02AAEEBA744634F9F /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		8BF7581F172F9D40A183ABE6 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0E441D411B454D66003F3418 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0E441D511B454D66003F3418 /* H2FMainViewController.m in Sources */,
+				0E441D4E1B454D66003F3418 /* H2FAppDelegate.m in Sources */,
+				0E441D4B1B454D66003F3418 /* main.m in Sources */,
+				7A187BCDCCB98BB6AD455A53 /* H2FHealthManager.m in Sources */,
+				7A1870899F12194BF4193A49 /* H2FLogger.m in Sources */,
+				7A18761F9A2F6E5DDBE89D2B /* StepsLog.m in Sources */,
+				7A187F0421722FE47D43B528 /* _StepsLog.m in Sources */,
+				7A1872A66BD14B75A79BDB84 /* CoreDataStack.m in Sources */,
+				7A1879D85186E5BA14FB1AD5 /* ManagedObjectContext.m in Sources */,
+				7A187C7E9EC7535F7FAB30E9 /* NSException+DefaultExceptions.m in Sources */,
+				7A187AA52363A4CB9660C50E /* NSObject+H2FClassName.m in Sources */,
+				0E01A6F61B4C19BF004549EB /* Health2Fitbit.xcdatamodel in Sources */,
+				7A18792C1645130F49D30501 /* NSManagedObjectContext+Helpers.m in Sources */,
+				7A18728AEAF46D279B40024D /* NSOperation+Failurable.m in Sources */,
+				7A187DC603E21A831B30AEBD /* AFOAuth1Client+BFTasks.m in Sources */,
+				7A1870600DFCF8C04B667ADD /* BFTask+H2FFailureChecking.m in Sources */,
+				7A187DF4834DD2650F37A1FD /* HKHealthStore+BFTasks.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0E441D5A1B454D66003F3418 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0E441D651B454D66003F3418 /* Health2FitbitTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0E441D601B454D66003F3418 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0E441D441B454D66003F3418 /* Health2Fitbit */;
+			targetProxy = 0E441D5F1B454D66003F3418 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		0E441D521B454D66003F3418 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0E441D531B454D66003F3418 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		0E441D571B454D66003F3418 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0E441D581B454D66003F3418 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0E441D661B454D66003F3418 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_BITCODE = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0E441D671B454D66003F3418 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_BITCODE = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0E441D691B454D66003F3418 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A889FB0B8A42395C9D0A18C2 /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Health2Fitbit/Health2Fitbit.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = Health2Fitbit/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.polidea.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				USER_HEADER_SEARCH_PATHS = "\"${PROJECT_DIR}/Pods\"/**";
+			};
+			name = Debug;
+		};
+		0E441D6A1B454D66003F3418 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 089D69186F647D89DB5F977D /* Pods.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Health2Fitbit/Health2Fitbit.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = Health2Fitbit/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.polidea.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				USER_HEADER_SEARCH_PATHS = "\"${PROJECT_DIR}/Pods\"/**";
+			};
+			name = Release;
+		};
+		0E441D6C1B454D66003F3418 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = Health2FitbitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "mm.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Health2Fitbit.app/Health2Fitbit";
+			};
+			name = Debug;
+		};
+		0E441D6D1B454D66003F3418 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = Health2FitbitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "mm.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Health2Fitbit.app/Health2Fitbit";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0E441D401B454D66003F3418 /* Build configuration list for PBXProject "Health2Fitbit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0E441D661B454D66003F3418 /* Debug */,
+				0E441D671B454D66003F3418 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0E441D681B454D66003F3418 /* Build configuration list for PBXNativeTarget "Health2Fitbit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0E441D691B454D66003F3418 /* Debug */,
+				0E441D6A1B454D66003F3418 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0E441D6B1B454D66003F3418 /* Build configuration list for PBXNativeTarget "Health2FitbitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0E441D6C1B454D66003F3418 /* Debug */,
+				0E441D6D1B454D66003F3418 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0E441D3D1B454D66003F3418 /* Project object */;
+}

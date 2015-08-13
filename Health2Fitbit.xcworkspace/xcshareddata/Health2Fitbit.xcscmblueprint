@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "3F5DF5F3C49B1E82C9FC7950D011CF0A55870430",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "0800050F16646F91B651C661D0CB471DEACD1B53" : 0,
+    "3F5DF5F3C49B1E82C9FC7950D011CF0A55870430" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "7581B8BC-E572-4A8A-B243-272E2EFAB320",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "0800050F16646F91B651C661D0CB471DEACD1B53" : "Health2Fitbit",
+    "3F5DF5F3C49B1E82C9FC7950D011CF0A55870430" : "Health2Fitbit_Public\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "Health2Fitbit",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Health2Fitbit.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "gitlab.polidea.com:michal.mizera\/Health2Fitbit.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "0800050F16646F91B651C661D0CB471DEACD1B53"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/Polidea\/Health2Fitbit.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "3F5DF5F3C49B1E82C9FC7950D011CF0A55870430"
+    }
+  ]
+}
