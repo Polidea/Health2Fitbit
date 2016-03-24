@@ -2,7 +2,7 @@ source 'https://github.com/CocoaPods/Specs.git'
 
 inhibit_all_warnings!
 
-link_with 'Health2Fitbit'
+target 'Health2Fitbit'
 
 pod 'BFTask-Extras', "0.2.4"
 pod 'Bolts', '1.2.0'
